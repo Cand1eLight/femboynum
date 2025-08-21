@@ -1,0 +1,125 @@
+/* 全局样式 */
+body {
+    background-color: #1a1b26; /* 深色背景保持不变 */
+    color: #c0c5ce;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 计算器容器 */
+.calculator-container {
+    background-color: #24283b;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    /* [更改] 标题颜色为柔和的粉色 */
+    color: #f8cdda; 
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: #565f7d;
+    margin-bottom: 25px;
+}
+
+/* 输入区域 */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#name-input {
+    background-color: #1e202e;
+    border: 1px solid #3b4261;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #c0c5ce;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#name-input::placeholder {
+    color: #565f7d;
+}
+
+#name-input:focus {
+    /* [更改] 输入框聚焦时边框颜色 */
+    border-color: #a6c1ee; 
+}
+
+#calculate-btn {
+    /* [更改] 按钮颜色为粉蓝渐变 */
+    background: linear-gradient(to right, #f8cdda, #a6c1ee); 
+    color: #1a1b26; /* 深色文字以突出显示 */
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#calculate-btn:hover {
+    opacity: 0.9;
+}
+
+/* 结果区域 */
+#result-area {
+    margin-top: 30px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#result-area.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.progress-bar-container {
+    background-color: #1e202e;
+    border-radius: 30px;
+    padding: 4px;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    /* [更改] 进度条颜色也为粉蓝渐变 */
+    background: linear-gradient(to right, #f8cdda, #a6c1ee);
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #1a1b26; /* 深色文字 */
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
+#result-comment {
+    font-size: 1.1rem;
+    /* [更改] 评语文字颜色 */
+    color: #a6c1ee; 
+    font-weight: bold;
+}

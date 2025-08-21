@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>男娘指数计算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>男娘指数计算器</h1>
+        <p class="subtitle">输入你的名字，看看你的可爱潜质！</p>
+        <p class="disclaimer">(纯属娱乐，请勿当真)</p>
+
+        <div class="input-area">
+            <input type="text" id="name-input" placeholder="输入你的名字">
+            <button id="calculate-btn">开始计算</button>
+        </div>
+
+        <div id="result-area" class="hidden">
+            <p>“<span id="result-name"></span>” 的男娘指数计算结果</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar">
+                    <span id="progress-text"></span>
+                </div>
+            </div>
+            <p id="result-comment"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
